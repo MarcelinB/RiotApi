@@ -16,6 +16,7 @@ class ChampionManager
 
         $body = $res->getBody();
         $rawPacket = json_decode($body);
+
         return $rawPacket;
     }
 }
