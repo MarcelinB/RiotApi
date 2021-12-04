@@ -1,7 +1,27 @@
+#body
+{
+    display: flex;
+}
 #AffichageIconsChamps
 {
+    display: flex;
+    flex-wrap: wrap;
     border: pink 5px solid;
     background-color: blue;
-    padding-right: 50%;
-    padding-top: 10%;
+    height: 50%;
+    width: 50%;
+}
+#AffichageDetail
+{
+    border: pink 5px solid;
+    background-color: rgb(156, 39, 59);
+    height: 1000px;
+    width: 50%;
+    
+    
+}
+.iconChamp
+{
+    height: 80px;
+    width: 80px;
 }

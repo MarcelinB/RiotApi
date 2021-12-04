@@ -1,4 +1,6 @@
+
 {% extends 'base.html.twig' %}
+
 
 
 {% block title %}Liste des champions{% endblock %}
@@ -9,10 +11,32 @@
 
 
 {% block body %}
-
+<div id="body">
     <div id="AffichageIconsChamps">
+    
     {% for img in nameChamp %}
         <img src="{{ img }}" alt="Image" class="iconChamp">
     {% endfor %}
     </div>
+    <div id="AffichageDetail"></div>
+</div>
+<script type="text/javascript">
+ 
+     var img = document.getElementsByClassName('iconChamp');
+     
+
+     for(let i = 0; i < img.length; i++) {
+  img[i].addEventListener("click", function() {
+    
+    var scr = this.src;
+    var affichageDetail = document.getElementById('AffichageDetail');
+    affichageDetail.innerHTML = '<center><img src="' + scr + '" alt="Image" </center>';
+
+  })
+}
+     
+        
+
+        
+    </script>
 {% endblock %}

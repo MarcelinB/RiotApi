@@ -14,9 +14,9 @@ class TaskController extends AbstractController
      */
     public function index(): Response
     {
-        $champions = new ChampionManager;
-        $dChampions = $champions->getPacket();
-        $listFreeChamp = $dChampions->freeChampionIds;
+        // $champions = new ChampionManager;
+        // $dChampions = $champions->getPacket();
+        // $listFreeChamp = $dChampions->freeChampionIds;
 
         //Envoie sur le twig mon tableau de lien vers les images de l'Api
         $getAllChamp = new \GetAllChampion();
